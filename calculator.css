@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+#calculator {
+  width: 300px;
+  margin: 100px auto;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff; /* White background for calculator */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: right;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+button {
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #eee; /* Light gray hover effect */
+}
+
+button:active {
+  background-color: #ddd; /* Darker gray for active state */
+}
+
+button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Colors for specific buttons */
+button.operator {
+  background-color: #f2f2f2; /* Light gray for operators */
+  color: #333;
+}
+
+button.operator:hover {
+  background-color: #ddd; /* Darker gray on hover for operators */
+}
+
+button.equal {
+  background-color: #4CAF50; /* Green for equals */
+  color: white;
+}
+
+button.equal:hover {
+  background-color: #45a049; /* Darker green on hover for equals */
+}
+
+button.clear {
+  background-color: #f44336; /* Red for clear */
+  color: white;
+}
+
+button.clear:hover {
+  background-color: #d32f2f; /* Darker red on hover for clear */
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: right;
+}
